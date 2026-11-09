@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17201b">
+  <meta name="description" content="Terra 的角色设计展页。认识苔芽，探索角色设定、动态短片与声音设计。">
+  <title>苔芽 MOSS · Terra 角色设计</title>
+  <link rel="icon" href="assets/moss.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="showcase.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="site-head">
+    <div class="head-inner wrap">
+      <a class="brand" href="#cover" aria-label="Terra 角色设计封面"><span aria-hidden="true">✳</span> Terra<span class="brand-divider"></span><small>角色设计</small></a>
+      <nav aria-label="展页章节">
+        <a href="#cover" aria-current="location">封面</a>
+        <a href="#character">角色</a>
+        <a href="#film">短片</a>
+        <a href="#sound">音乐</a>
+      </nav>
+      <a class="home-link" href="https://github.com/sollschlosser-wq/terra-character-showcase">项目源码 ↗</a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="cover" aria-labelledby="cover-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="dot"></span> CHARACTER DESIGN <span class="slash">/</span> 01</div>
+          <h1 id="cover-title"><span>MOSS<span class="period">.</span></span><small>苔芽</small></h1>
+          <p class="tagline">一位小小的森林巡游员</p>
+          <p class="hero-description">雨后，苔芽会出门巡查。它把新生的叶子、积水和来不及散去的雾，一一记进巡游日志。</p>
+          <a href="#character" class="button primary">翻开角色档案 <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-stage">
+          <div class="orbit orbit-outer" aria-hidden="true"></div>
+          <div class="orbit orbit-inner" aria-hidden="true"></div>
+          <span class="stage-mark stage-top" aria-hidden="true">FIG. 01 <i></i> MOSS</span>
+          <span class="stage-mark stage-right" aria-hidden="true">✧</span>
+          <span class="stage-mark stage-left" aria-hidden="true">+</span>
+          <span class="pollen p1" aria-hidden="true"></span><span class="pollen p2" aria-hidden="true"></span><span class="pollen p3" aria-hidden="true"></span><span class="pollen p4" aria-hidden="true"></span><span class="pollen p5" aria-hidden="true"></span>
+          <img src="assets/moss.svg" width="540" height="560" alt="苔芽戴着浅绿色种壳帽，头顶生着两片嫩叶，围一条橙色围巾。">
+          <span class="stage-mark stage-bottom" aria-hidden="true">01 — 04 / FIELD NOTES</span>
+        </div>
+      </div>
+      <div class="wrap hero-foot">
+        <span>01 / 动效封面</span>
+        <span>示例角色 · 页面原型</span>
+        <button id="motion" type="button" aria-pressed="false">暂停封面动效</button>
+      </div>
+    </section>
+
+    <section class="chapter wrap" id="character" aria-labelledby="character-title">
+      <header class="chapter-head">
+        <div><p class="eyebrow"><span class="chapter-index">02</span> CHARACTER FILE</p><h2 id="character-title">角色档案</h2></div>
+        <p>从剪影到配件，拆开看苔芽的造型。</p>
+      </header>
+      <div class="character-grid">
+        <figure class="design-plate" data-detail="full">
+          <div class="plate-bar"><span>FIG. 02 / MOSS</span><span>DESIGN STUDY</span></div>
+          <div class="plate-image"><img src="assets/moss.svg" width="540" height="560" alt="苔芽造型全览" loading="lazy"></div>
+          <figcaption id="plate-caption">01 / 全身造型</figcaption>
+        </figure>
+        <div class="design-copy">
+          <p class="eyebrow">FIELD NOTE NO. 001</p>
+          <h3>苔芽 <em>Moss</em></h3>
+          <p>种壳帽和双叶组成一眼能认出的轮廓。暖橙色围巾在绿色环境里露出一点暖意，小挎包用来收集落叶和种子。</p>
+          <div class="design-options" role="group" aria-label="选择造型细节">
+            <button type="button" data-detail="full" aria-pressed="true"><span>01</span> 全身造型 <span aria-hidden="true">↗</span></button>
+            <button type="button" data-detail="hood" aria-pressed="false"><span>02</span> 双叶与种壳帽 <span aria-hidden="true">↗</span></button>
+            <button type="button" data-detail="bag" aria-pressed="false"><span>03</span> 围巾与挎包 <span aria-hidden="true">↗</span></button>
+          </div>
+          <div class="palette" aria-label="角色配色"><span><i style="--swatch:#58705a"></i>苔绿</span><span><i style="--swatch:#b8cb8b"></i>芽绿</span><span><i style="--swatch:#e7c78d"></i>种壳</span><span><i style="--swatch:#c66a4a"></i>陶橙</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="film-section" id="film" aria-labelledby="film-title">
+      <div class="chapter wrap">
+        <header class="chapter-head">
+          <div><p class="eyebrow"><span class="chapter-index">03</span> MOTION STUDY</p><h2 id="film-title">角色短片</h2></div>
+          <p>用镜头试一试，苔芽的世界该怎样动起来。</p>
+        </header>
+        <figure class="film-frame">
+          <video controls playsinline preload="metadata" poster="assets/film-poster.jpg" aria-label="雨后出发，苔芽动效样片">
+            <source src="assets/moss-motion.mp4" type="video/mp4">
+            <a href="assets/moss-motion.mp4">打开样片</a>
+          </video>
+          <figcaption><span><strong>雨后出发</strong> <span class="film-sub">/ After the Rain</span></span><span class="eyebrow">静音动效样片</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="chapter wrap" id="sound" aria-labelledby="sound-title">
+      <header class="chapter-head">
+        <div><p class="eyebrow"><span class="chapter-index">04</span> SOUND DESIGN</p><h2 id="sound-title">声音设计</h2></div>
+        <p>试听苔芽的主题旋律和森林环境声。</p>
+      </header>
+      <div class="sound-grid">
+        <article class="track">
+          <div class="track-art track-theme"><span>01 / THEME</span><div class="grooves" aria-hidden="true"><i></i></div></div>
+          <div class="track-copy"><h3>新芽主题</h3><p>用短促的拨弦音模拟小步子的节奏。</p><audio controls preload="metadata" src="assets/sprout-theme.mp3" aria-label="新芽主题试听"></audio></div>
+        </article>
+        <article class="track">
+          <div class="track-art track-ambience"><span>02 / AMBIENCE</span><div class="grooves" aria-hidden="true"><i></i></div></div>
+          <div class="track-copy"><h3>雾中巡游</h3><p>用轻柔的底噪和零星水滴声铺出空间。</p><audio controls preload="metadata" src="assets/mist-ambience.mp3" aria-label="雾中巡游试听"></audio></div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap footer"><span><b>✳ Terra</b> <span class="slash">/</span> 角色设计原型</span><a href="#cover">返回封面 ↑</a></footer>
+</body>
+</html>
